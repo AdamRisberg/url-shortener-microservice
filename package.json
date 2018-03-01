@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "Shortens urls and stores the redirect for future use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myniztan/url-shortener-microservice.git"
+  },
+  "author": "Adam Risberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myniztan/url-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/myniztan/url-shortener-microservice#readme"
+}
