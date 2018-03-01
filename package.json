@@ -4,7 +4,7 @@
   "description": "Shortens urls and stores the redirect for future use",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/myniztan/url-shortener-microservice/issues"
   },
-  "homepage": "https://github.com/myniztan/url-shortener-microservice#readme"
+  "homepage": "https://github.com/myniztan/url-shortener-microservice#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
