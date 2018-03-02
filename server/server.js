@@ -7,7 +7,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/url_shortener");
 
 app.use(express.static("./Public"));
-
 app.use("/", routes);
 
 module.exports = app;

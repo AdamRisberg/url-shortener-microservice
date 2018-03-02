@@ -33,14 +33,12 @@ function newUrl(req, res) {
 }
 
 function redirect(req, res) {
-  // TODO
-  // Look up short url in database. If not found, return error object.
+  ShortUrl.findOne({ short_url: req.params.url })
+    .then(function(url) {
+      if(url) return res.redirect(url.original_url);
 
-  res.send("/:url REDIRECT ROUTE");
+      res.json({ error: "URL not found." });
+    });
 }
 
-function getHomepage(req, res) {
-  res.send("/ INDEX ROUTE");
-}
-
-module.exports = { checkUrl, newUrl, redirect, getHomepage };
+module.exports = { checkUrl, newUrl, redirect };
