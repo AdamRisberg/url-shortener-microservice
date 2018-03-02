@@ -8,10 +8,19 @@ var ShortUrlSchema = new Schema({
     unique: true
   },
   short_url: {
-    type: String,
+    type: Number,
     required: true,
     unique: true
   }
 });
+
+ShortUrlSchema.methods = {
+  toJSON: function() {
+    var obj = this.toObject();
+    delete obj._id;
+    delete obj.__v;
+    return obj;
+  }
+};
 
 module.exports = mongoose.model("short_url", ShortUrlSchema);

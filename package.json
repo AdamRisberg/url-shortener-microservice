@@ -18,6 +18,7 @@
   "homepage": "https://github.com/myniztan/url-shortener-microservice#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "mongoose": "^5.0.7"
+    "mongoose": "^5.0.7",
+    "valid-url": "^1.0.9"
   }
 }
